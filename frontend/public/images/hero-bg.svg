@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Trading chart background">
+  <defs>
+    <linearGradient id="g-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <pattern id="p-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1652f0" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="g-spark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1652f0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#1652f0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#g-bg)"/>
+  <rect width="1200" height="600" fill="url(#p-grid)"/>
+
+  <!-- Candle-like bars scattered -->
+  <g opacity="0.55" fill="#1652f0">
+    <rect x="80" y="220" width="3" height="60" rx="1"/>
+    <rect x="100" y="240" width="3" height="40" rx="1"/>
+    <rect x="120" y="200" width="3" height="80" rx="1"/>
+    <rect x="140" y="180" width="3" height="100" rx="1"/>
+    <rect x="160" y="230" width="3" height="50" rx="1"/>
+
+    <rect x="1040" y="200" width="3" height="80" rx="1"/>
+    <rect x="1060" y="240" width="3" height="40" rx="1"/>
+    <rect x="1080" y="180" width="3" height="100" rx="1"/>
+    <rect x="1100" y="160" width="3" height="120" rx="1"/>
+    <rect x="1120" y="220" width="3" height="60" rx="1"/>
+  </g>
+
+  <!-- Three layered sparklines -->
+  <path
+    d="M-20 480 L100 420 L200 440 L300 380 L400 400 L500 320 L600 360 L700 280 L800 320 L900 220 L1000 260 L1100 180 L1200 200"
+    fill="none" stroke="#1652f0" stroke-opacity="0.12" stroke-width="1.5"/>
+  <path
+    d="M-20 480 L100 420 L200 440 L300 380 L400 400 L500 320 L600 360 L700 280 L800 320 L900 220 L1000 260 L1100 180 L1200 200 L1200 600 L-20 600 Z"
+    fill="url(#g-spark)" stroke="none"/>
+</svg>

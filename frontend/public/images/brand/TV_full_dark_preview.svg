@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1916" height="821" viewBox="0 0 1916 821"><rect width="1916" height="821" fill="#000"/>
+  <title id="title">Tradervote refined full vector logo</title>
+  <desc id="desc">Refined Tradervote full vector logo with preserved TV mark from the approved reference and clean wordmark/slogan typography.</desc>
+  <defs>
+    <linearGradient id="goldGradient" x1="25" y1="50" x2="185" y2="245" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B07D18"/>
+      <stop offset="0.18" stop-color="#D4AF37"/>
+      <stop offset="0.34" stop-color="#FFF1A5"/>
+      <stop offset="0.52" stop-color="#D7B041"/>
+      <stop offset="0.78" stop-color="#B9871F"/>
+      <stop offset="1" stop-color="#8D6110"/>
+    </linearGradient>
+    <radialGradient id="goldHighlight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(123 90) rotate(90) scale(65 52)">
+      <stop offset="0" stop-color="#FFF8C8" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#FFF4B8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#FFF4B8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tealGradient" x1="120" y1="60" x2="310" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#54EFE1"/>
+      <stop offset="0.55" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="goldWordGradient" x1="650" y1="260" x2="1330" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A87416"/>
+      <stop offset="0.18" stop-color="#D4AF37"/>
+      <stop offset="0.36" stop-color="#FFF1A5"/>
+      <stop offset="0.56" stop-color="#D7B041"/>
+      <stop offset="0.80" stop-color="#B9871F"/>
+      <stop offset="1" stop-color="#8D6110"/>
+    </linearGradient>
+    <linearGradient id="whiteGradient" x1="720" y1="470" x2="1220" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#ECECEC"/>
+    </linearGradient>
+    <symbol id="tvMark" viewBox="0 0 340 280">
+      <path d="M 180.0 71.0 L 31.0 72.0 L 31.0 102.0 L 90.0 103.0 L 90.0 222.0 L 94.0 220.0 L 121.0 187.0 L 121.0 103.0 L 181.0 102.0 L 182.0 73.0 Z" fill="url(#goldGradient)"/>
+      <path d="M 180.0 71.0 L 31.0 72.0 L 31.0 102.0 L 90.0 103.0 L 90.0 222.0 L 94.0 220.0 L 121.0 187.0 L 121.0 103.0 L 181.0 102.0 L 182.0 73.0 Z" fill="url(#goldHighlight)"/>
+      <path d="M 180.0 71.0 L 31.0 72.0 L 31.0 102.0 L 90.0 103.0 L 90.0 222.0 L 94.0 220.0 L 121.0 187.0 L 121.0 103.0 L 181.0 102.0 L 182.0 73.0 Z" stroke="#ECCD67" stroke-width="1.2" opacity="0.9"/>
+      <path d="M 303.0 51.0 L 298.0 52.0 L 257.0 72.0 L 257.0 74.0 L 265.0 78.0 L 265.0 82.0 L 205.0 183.0 L 200.0 182.0 L 163.0 119.0 L 133.0 119.0 L 134.0 123.0 L 202.0 238.0 L 204.0 238.0 L 288.0 94.0 L 295.0 93.0 L 301.0 96.0 Z" fill="url(#tealGradient)"/>
+      <path d="M 303.0 51.0 L 298.0 52.0 L 257.0 72.0 L 257.0 74.0 L 265.0 78.0 L 265.0 82.0 L 205.0 183.0 L 200.0 182.0 L 163.0 119.0 L 133.0 119.0 L 134.0 123.0 L 202.0 238.0 L 204.0 238.0 L 288.0 94.0 L 295.0 93.0 L 301.0 96.0 Z" stroke="#9AF9F0" stroke-width="1" opacity="0.5"/>
+      <path d="M 148.0 181.0 L 148.0 186.0 L 142.0 187.0 L 142.0 242.0 L 150.0 243.0 L 156.0 242.0 L 157.0 190.0 L 156.0 187.0 L 151.0 187.0 L 150.0 181.0 Z" fill="url(#tealGradient)"/>
+      <path d="M 121.0 214.0 L 120.0 247.0 L 127.0 251.0 L 135.0 252.0 L 135.0 214.0 Z" fill="url(#tealGradient)"/>
+      <path d="M 165.0 197.0 L 165.0 222.0 L 174.0 222.0 L 174.0 220.0 L 176.0 219.0 L 176.0 212.0 L 168.0 198.0 Z" fill="url(#tealGradient)"/>
+    </symbol>
+  </defs>
+  <use href="#tvMark" x="120" y="180" width="530" height="437"/>
+  <text x="690" y="412" fill="url(#goldWordGradient)" font-family="DejaVu Sans, Arial, sans-serif" font-size="170" font-weight="700">TRADER</text>
+  <text x="1465" y="412" fill="url(#tealGradient)" font-family="DejaVu Sans, Arial, sans-serif" font-size="170" font-weight="700">VOTE</text>
+  <text x="760" y="550" fill="url(#whiteGradient)" font-family="DejaVu Sans, Arial, sans-serif" font-size="62" font-weight="500">Trusted by Traders.</text>
+  <text x="1400" y="550" fill="url(#tealGradient)" font-family="DejaVu Sans, Arial, sans-serif" font-size="58" font-weight="500">Driven by Votes.</text>
+</svg>

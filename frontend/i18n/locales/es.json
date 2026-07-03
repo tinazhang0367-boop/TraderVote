@@ -1,0 +1,80 @@
+{
+  "_status": "placeholder",
+  "_todo": "Translate to Español",
+  "nav": {
+    "brokers": "Brokers",
+    "top": "Top",
+    "promotions": "Promotions",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "signin": "Sign in"
+  },
+  "common": {
+    "loading": "Loading…",
+    "see_more": "See more",
+    "language": "Language"
+  },
+  "home": {
+    "hero_title": "Find the broker traders actually trust",
+    "hero_sub": "12,847 verified reviews · 380+ brokers · 16 languages",
+    "search_placeholder": "Search broker, regulator, country…",
+    "search_btn": "Search",
+    "top_title": "Top brokers this month",
+    "view_all": "See all 380+ brokers",
+    "by_country_title": "Brokers by country",
+    "reviews_title": "What traders say",
+    "brokers": "brokers"
+  },
+  "brokers": {
+    "title": "All Brokers",
+    "subtitle": "{count}+ regulated brokers with verified trader reviews",
+    "filter_country": "Country",
+    "filter_regulator": "Regulator",
+    "empty": "No brokers match your filters."
+  },
+  "broker": {
+    "read_review": "Read review",
+    "open_account": "Open account",
+    "founded": "Founded",
+    "about_title": "About {name}",
+    "about_intro": "{name} is a regulated broker founded in {year}.",
+    "key_facts": "Key facts",
+    "headquarters": "Headquarters",
+    "regulators": "Regulators",
+    "min_deposit": "Min deposit",
+    "max_leverage": "Max leverage",
+    "spreads_from": "Spreads from",
+    "platforms": "Platforms",
+    "reviews_title": "Trader reviews",
+    "not_found": "Broker not found"
+  },
+  "review": {
+    "report": "Report",
+    "empty": "No reviews yet.",
+    "verified": "Verified",
+    "thumbs_up": "Recommended",
+    "thumbs_down": "Not recommended",
+    "ago_days": "{n} days ago",
+    "ago_months": "{n} months ago",
+    "ago_years": "{n} years ago"
+  },
+  "promotions": {
+    "title": "Promotions",
+    "subtitle": "Latest broker bonuses and signup offers",
+    "expires": "Expires",
+    "claim": "Claim"
+  },
+  "footer": {
+    "tagline": "Trader-review-driven broker discovery",
+    "company": "Company",
+    "about": "About",
+    "contact": "Contact",
+    "careers": "Careers",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "risk_warning": "Risk warning",
+    "follow": "Follow us",
+    "copyright": "© 2024 Tradervote. All rights reserved."
+  }
+}

@@ -1,0 +1,135 @@
+/* Design tokens — see docs/design/design-system.md */
+
+:root {
+  /* ─── Brand ─── */
+  --color-brand-500: #1652f0;
+  --color-brand-600: #0d3ec9;
+  --color-brand-700: #0a2e9c;
+  --color-brand-50:  #eef3ff;
+  --color-brand-100: #d9e3ff;
+
+  /* ─── Brand palette (gold + teal from logo) ─── */
+  --color-gold:     #D4AF37;            /* primary gold (logo T) */
+  --color-gold-dark: #B07D18;
+  --color-gold-bg:  rgba(212, 175, 55, .12);
+  --color-teal:     #14B8A6;            /* primary teal (logo V) */
+  --color-teal-dark: #0E8C7C;
+  --color-teal-light: #5EEAD4;
+  --color-teal-bg:  rgba(20, 184, 166, .12);
+
+  /* ─── Trust Score ─── */
+  --score-excellent: #00b67a;       /* Trustpilot-equivalent "Great" */
+  --score-great:     #73cf11;
+  --score-average:   #ffb400;
+  --score-poor:      #ff7a00;
+  --score-bad:       #d32f2f;
+
+  /* Soft tinted backgrounds (for badges, pills, hover) */
+  --score-excellent-bg: #e6f7ef;
+  --score-great-bg:     #f1f8e6;
+  --score-average-bg:   #fff8e1;
+  --score-poor-bg:      #fff1e6;
+  --score-bad-bg:       #fdecea;
+
+  /* ─── Surface ─── */
+  --color-bg:         #ffffff;
+  --color-bg-muted:   #f7f9fc;
+  --color-bg-subtle:  #fbfcfd;
+  --color-surface:    #ffffff;
+  --color-border:     #e6e9ef;
+  --color-border-strong: #c9cfd9;
+  --color-overlay:    rgba(10, 11, 13, .55);
+
+  /* ─── Text ─── */
+  --color-text-1: #0a0b0d;
+  --color-text-2: #4b5563;
+  --color-text-3: #8a94a6;
+  --color-text-4: #b0b8c5;            /* faintest — captions, hint */
+  --color-text-inv: #ffffff;
+  --color-text-link: var(--color-brand-600);
+
+  /* ─── Status ─── */
+  --color-success: #00b67a;
+  --color-warning: #ffb400;
+  --color-danger:  #d32f2f;
+  --color-info:    #1652f0;
+
+  /* ─── Regulator tiers ─── */
+  --regulator-tier1: #00b67a;          /* FCA, ASIC, CySEC etc. — green for trust */
+  --regulator-tier2: #ffb400;          /* mid-tier — gold */
+  --regulator-tier3: #ff7a00;          /* weak — orange */
+  --regulator-offshore: #d32f2f;       /* risky — red */
+
+  /* ─── Sentiment (4-axis rating) ─── */
+  --sentiment-positive: #00b67a;
+  --sentiment-neutral:  #8a94a6;
+  --sentiment-negative: #d32f2f;
+
+  /* ─── Shadows ─── */
+  --shadow-sm:    0 1px 2px rgba(10,11,13,.05);
+  --shadow-md:    0 4px 12px rgba(10,11,13,.08);
+  --shadow-lg:    0 12px 32px rgba(10,11,13,.12);
+  --shadow-xl:    0 24px 60px rgba(10,11,13,.16);
+  --shadow-focus: 0 0 0 3px rgba(22, 82, 240, .25);
+  --shadow-glow-brand: 0 0 0 4px rgba(22, 82, 240, .12);
+  --shadow-glow-green:  0 0 0 4px rgba(0, 182, 122, .15);
+  --shadow-glow-red:    0 0 0 4px rgba(211, 47, 47, .15);
+  --shadow-inner: inset 0 1px 2px rgba(10, 11, 13, .04);
+
+  /* ─── Radius (per spec: ~8px cards, refined) ─── */
+  --radius-xs:  4px;
+  --radius-sm:  6px;
+  --radius-md:  8px;       /* primary card / button radius per spec */
+  --radius-lg:  10px;
+  --radius-xl:  14px;
+  --radius-2xl: 20px;
+  --radius-pill: 999px;
+
+  /* ─── Spacing (4px scale) ─── */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-24: 96px;
+
+  /* ─── Type ─── */
+  --font-sans: 'Inter', 'Noto Sans Thai', 'Noto Sans Vietnamese', 'Noto Sans SC', 'Noto Sans TC', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --text-xs: 0.75rem;     /* 12 */
+  --text-sm: 0.875rem;    /* 14 */
+  --text-base: 1rem;      /* 16 */
+  --text-lg: 1.125rem;    /* 18 */
+  --text-xl: 1.25rem;     /* 20 */
+  --text-2xl: 1.5rem;     /* 24 */
+  --text-3xl: 2rem;       /* 32 */
+  --text-4xl: 2.75rem;    /* 44 */
+  --text-5xl: 3.5rem;     /* 56 */
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ─── Layout ─── */
+  --container-max: 1200px;
+  --header-h: 72px;
+
+  /* ─── Z-Index scale ─── */
+  --z-base: 1;
+  --z-dropdown: 50;
+  --z-sticky: 60;
+  --z-modal: 100;
+  --z-toast: 200;
+
+  /* ─── Motion ─── */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+}

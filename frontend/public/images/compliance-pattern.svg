@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-label="Compliance and trust badge" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ovl-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="200" fill="url(#ovl-bg)"/>
+  <g opacity="0.7" fill="none" stroke="#1652f0" stroke-width="1" stroke-opacity="0.08">
+    <path d="M0 100 L60 100 M60 100 L60 40 M60 40 L120 40 M120 40 L120 100 M120 100 L180 100 M180 100 L180 160 M180 160 L240 160 M240 160 L240 100 M240 100 L300 100 M300 100 L300 40 M300 40 L360 40 M360 40 L360 100 M360 100 L420 100 M420 100 L420 160 M420 160 L480 160 M480 160 L480 100 M480 100 L540 100 M540 100 L540 40 M540 40 L600 40 M600 40 L600 100 M600 100 L660 100 M660 100 L660 160 M660 160 L720 160 M720 160 L720 100 M720 100 L780 100 M780 100 L780 40 M780 40 L840 40 M840 40 L840 100 M840 100 L900 100 M900 100 L900 160 M900 160 L960 160 M960 160 L960 100 M960 100 L1020 100 M1020 100 L1020 40 M1020 40 L1080 40 M1080 40 L1080 100 M1080 100 L1140 100 M1140 100 L1140 160 M1140 160 L1200 160"/>
+  </g>
+</svg>

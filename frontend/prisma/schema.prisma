@@ -1,0 +1,182 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                Int                      @id @default(autoincrement())
+  email             String                   @unique
+  name              String
+  passwordHash      String
+  role              String                   @default("USER")
+  status            String                   @default("ACTIVE")
+  emailVerifiedAt   DateTime?
+  createdAt         DateTime                 @default(now())
+  updatedAt         DateTime                 @updatedAt
+  sessions          Session[]
+  reviews           Review[]
+  verificationTokens EmailVerificationToken[]
+  passwordResetTokens PasswordResetToken[]
+}
+
+model EmailVerificationToken {
+  id        Int      @id @default(autoincrement())
+  tokenHash String   @unique
+  userId    Int
+  email     String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Session {
+  id        Int      @id @default(autoincrement())
+  tokenHash String   @unique
+  userId    Int
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model PasswordResetToken {
+  id        Int      @id @default(autoincrement())
+  tokenHash String   @unique
+  userId    Int
+  email     String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Broker {
+  id              Int       @id @default(autoincrement())
+  slug            String    @unique
+  name            String
+  logoUrl         String    @default("")
+  regulators      String    @default("[]")
+  founded         Int?
+  headquarters    String?
+  minDepositJson  String?
+  maxLeverage     String?
+  spreadsFrom     Float?
+  platforms       String    @default("[]")
+  trustScore      Float     @default(0)
+  trustBand       String    @default("average")
+  reviewCount     Int       @default(0)
+  rank            Int?
+  category        String    @default("forex")
+  affiliateUrl    String?
+  description     String?
+  status          String    @default("PUBLISHED")
+  aiSummary       String?
+  aiSummaryAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  licenses        License[]
+  reviews         Review[]
+}
+
+model Regulator {
+  id              Int       @id @default(autoincrement())
+  code            String    @unique
+  name            String
+  shortName       String?
+  country         String
+  tier            String
+  description     String?
+  verificationUrl String?
+  status          String    @default("PUBLISHED")
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  licenses        License[]
+}
+
+model License {
+  id          Int       @id @default(autoincrement())
+  brokerId    Int
+  regulatorId Int
+  licenseNo   String?
+  status      String    @default("UNKNOWN")
+  checkedAt   DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  broker      Broker    @relation(fields: [brokerId], references: [id], onDelete: Cascade)
+  regulator   Regulator @relation(fields: [regulatorId], references: [id], onDelete: Cascade)
+
+  @@unique([brokerId, regulatorId])
+}
+
+model Review {
+  id                Int      @id @default(autoincrement())
+  brokerId          Int
+  userId            Int?
+  brokerSlug        String
+  authorName        String
+  authorEmail       String?
+  authorCountry     String
+  authorCountryCode String?
+  rating            Float
+  trustBand         String
+  title             String?
+  body              String
+  ratingJson        String?
+  experienceLevel   String?
+  tradedAssets      String   @default("[]")
+  verified          Boolean  @default(false)
+  helpful           Int      @default(0)
+  status            String   @default("PENDING")
+  source            String   @default("USER")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  broker            Broker   @relation(fields: [brokerId], references: [id], onDelete: Cascade)
+  user              User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model Article {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  title       String
+  excerpt     String?
+  body        String
+  locale      String   @default("zh-CN")
+  status      String   @default("DRAFT")
+  source      String   @default("ADMIN")
+  seoTitle    String?
+  seoDesc     String?
+  publishedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model NewsItem {
+  id          Int      @id @default(autoincrement())
+  title       String
+  url         String?  @unique
+  source      String?
+  summary     String?
+  category    String   @default("broker")
+  status      String   @default("DRAFT")
+  publishedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AiTask {
+  id          Int      @id @default(autoincrement())
+  type        String
+  targetType  String?
+  targetId    String?
+  status      String   @default("QUEUED")
+  inputJson   String?
+  outputJson  String?
+  error       String?
+  runAt       DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

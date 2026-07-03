@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "brokers": "Broker",
+    "top": "Peringkat",
+    "promotions": "Promosi",
+    "reviews": "Ulasan",
+    "blog": "Blog",
+    "signin": "Masuk"
+  },
+  "common": {
+    "loading": "Memuat…",
+    "see_more": "Lihat lebih"
+  },
+  "home": {
+    "hero_title": "Temukan broker yang benar-benar dipercaya trader",
+    "hero_sub": "12.847 ulasan terverifikasi · 380+ broker · 4 bahasa",
+    "search_placeholder": "Cari broker, regulator, negara…",
+    "search_btn": "Cari",
+    "top_title": "Broker teratas bulan ini",
+    "view_all": "Lihat semua 380+ broker",
+    "by_country_title": "Broker berdasarkan negara",
+    "reviews_title": "Apa kata trader",
+    "brokers": "broker"
+  },
+  "brokers": {
+    "title": "Semua Broker",
+    "subtitle": "{count}+ broker teregulasi dengan ulasan trader terverifikasi",
+    "filter_country": "Negara",
+    "filter_regulator": "Regulator",
+    "empty": "Tidak ada broker yang cocok dengan filter."
+  },
+  "broker": {
+    "read_review": "Baca ulasan",
+    "open_account": "Buka akun",
+    "founded": "Didirikan",
+    "about_title": "Tentang {name}",
+    "about_intro": "{name} adalah broker teregulasi yang didirikan pada tahun {year}.",
+    "key_facts": "Fakta utama",
+    "headquarters": "Kantor pusat",
+    "regulators": "Regulator",
+    "min_deposit": "Deposit minimum",
+    "max_leverage": "Leverage maksimum",
+    "spreads_from": "Spread mulai",
+    "platforms": "Platform",
+    "reviews_title": "Ulasan trader",
+    "not_found": "Broker tidak ditemukan"
+  },
+  "review": {
+    "report": "Laporkan",
+    "empty": "Belum ada ulasan.",
+    "write_cta": "Tulis ulasan"
+  },
+  "promo": {
+    "title": "Promosi aktif",
+    "subtitle": "Bonus selamat datang hingga $1.500 · Cashback · Penarikan gratis",
+    "claim": "Klaim bonus",
+    "days_left": "{n} hari lagi",
+    "empty": "Tidak ada promosi aktif."
+  },
+  "top": {
+    "title": "Top broker",
+    "subtitle": "Diperingkat dari {count} ulasan trader terverifikasi",
+    "methodology_title": "Cara kami memberi peringkat",
+    "methodology_intro": "Algoritma Trust Score v3.2 kami menimbang:",
+    "weight_reviews": "Ulasan trader terverifikasi (total 12.847, 12 bulan terakhir)",
+    "weight_regulation": "Kualitas regulasi (FCA/CySEC/ASIC bobot lebih tinggi)",
+    "weight_withdrawal": "Kecepatan penarikan (90 hari terakhir)",
+    "weight_spreads": "Daya saing spread"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Edukasi forex, analisis pasar dan panduan broker SEA"
+  },
+  "trust": {
+    "based_on": "Berdasarkan {count} ulasan terverifikasi",
+    "regulated": "Teregulasi",
+    "regulators": "ASIC · CySEC · FCA · FSA",
+    "reviews": "12.847 ulasan",
+    "verified_avg": "rata-rata 4.2/5 terverifikasi",
+    "languages": "bahasa",
+    "since": "Sejak 2019",
+    "independent": "Ulasan independen"
+  },
+  "risk": {
+    "warning_title": "⚠️ Peringatan risiko",
+    "warning_body": "70% akun investor ritel kehilangan uang saat trading CFD. Pertimbangkan apakah Anda memahami cara kerja CFD dan mampu menanggung risiko tinggi kehilangan uang Anda."
+  },
+  "footer": {
+    "tagline": "Ulasan broker forex independen sejak 2019",
+    "top_brokers": "Top broker",
+    "by_country": "Berdasarkan negara",
+    "learn": "Belajar",
+    "glossary": "Glosarium",
+    "company": "Perusahaan",
+    "about": "Tentang kami",
+    "methodology": "Metodologi",
+    "contact": "Kontak",
+    "language": "Bahasa",
+    "risk": "Pengungkapan risiko",
+    "privacy": "Privasi",
+    "terms": "Syarat"
+  },
+  "countries": {
+    "TH": "Thailand",
+    "VN": "Vietnam",
+    "ID": "Indonesia",
+    "MY": "Malaysia",
+    "SG": "Singapura",
+    "PH": "Filipina",
+    "KH": "Kamboja",
+    "MM": "Myanmar"
+  }
+}

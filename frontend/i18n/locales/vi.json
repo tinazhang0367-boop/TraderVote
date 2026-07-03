@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "brokers": "Brokers",
+    "top": "Xếp hạng",
+    "promotions": "Khuyến mãi",
+    "reviews": "Đánh giá",
+    "blog": "Blog",
+    "signin": "Đăng nhập"
+  },
+  "common": {
+    "loading": "Đang tải…",
+    "see_more": "Xem thêm"
+  },
+  "home": {
+    "hero_title": "Tìm broker mà trader thực sự tin tưởng",
+    "hero_sub": "12.847 đánh giá xác thực · 380+ brokers · 4 ngôn ngữ",
+    "search_placeholder": "Tìm broker, cơ quan quản lý, quốc gia…",
+    "search_btn": "Tìm kiếm",
+    "top_title": "Broker hàng đầu tháng này",
+    "view_all": "Xem tất cả 380+ brokers",
+    "by_country_title": "Brokers theo quốc gia",
+    "reviews_title": "Trader nói gì",
+    "brokers": "brokers"
+  },
+  "brokers": {
+    "title": "Tất cả Brokers",
+    "subtitle": "{count}+ brokers được quản lý với đánh giá từ trader thực",
+    "filter_country": "Quốc gia",
+    "filter_regulator": "Cơ quan quản lý",
+    "empty": "Không có broker nào phù hợp bộ lọc."
+  },
+  "broker": {
+    "read_review": "Đọc đánh giá",
+    "open_account": "Mở tài khoản",
+    "founded": "Thành lập",
+    "about_title": "Về {name}",
+    "about_intro": "{name} là broker được quản lý thành lập năm {year}.",
+    "key_facts": "Thông tin chính",
+    "headquarters": "Trụ sở",
+    "regulators": "Cơ quan quản lý",
+    "min_deposit": "Nạp tối thiểu",
+    "max_leverage": "Đòn bẩy tối đa",
+    "spreads_from": "Spread từ",
+    "platforms": "Nền tảng",
+    "reviews_title": "Đánh giá từ trader",
+    "not_found": "Không tìm thấy broker"
+  },
+  "review": {
+    "report": "Báo cáo",
+    "empty": "Chưa có đánh giá.",
+    "write_cta": "Viết đánh giá"
+  },
+  "promo": {
+    "title": "Khuyến mãi đang chạy",
+    "subtitle": "Thưởng chào mừng đến $1,500 · Hoàn tiền · Miễn phí rút tiền",
+    "claim": "Nhận thưởng",
+    "days_left": "còn {n} ngày",
+    "empty": "Không có khuyến mãi đang chạy."
+  },
+  "top": {
+    "title": "Top brokers",
+    "subtitle": "Xếp hạng theo {count} đánh giá xác thực từ trader",
+    "methodology_title": "Cách chúng tôi xếp hạng",
+    "methodology_intro": "Thuật toán Trust Score v3.2 đánh trọng số:",
+    "weight_reviews": "Đánh giá từ trader đã xác thực (12.847 tổng, 12 tháng qua)",
+    "weight_regulation": "Chất lượng quản lý (FCA/CySEC/ASIC trọng số cao hơn)",
+    "weight_withdrawal": "Tốc độ rút tiền (90 ngày qua)",
+    "weight_spreads": "Khả năng cạnh tranh spread"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Kiến thức forex, phân tích thị trường và hướng dẫn broker tại SEA"
+  },
+  "trust": {
+    "based_on": "Dựa trên {count} đánh giá xác thực",
+    "regulated": "Được quản lý",
+    "regulators": "ASIC · CySEC · FCA · FSA",
+    "reviews": "12.847 đánh giá",
+    "verified_avg": "trung bình 4.2/5 đã xác thực",
+    "languages": "ngôn ngữ",
+    "since": "Từ 2019",
+    "independent": "Đánh giá độc lập"
+  },
+  "risk": {
+    "warning_title": "⚠️ Cảnh báo rủi ro",
+    "warning_body": "70% tài khoản nhà đầu tư cá nhân thua lỗ khi giao dịch CFD. Hãy cân nhắc xem bạn có hiểu cách CFD hoạt động và chấp nhận được rủi ro mất tiền cao hay không."
+  },
+  "footer": {
+    "tagline": "Đánh giá broker forex độc lập từ 2019",
+    "top_brokers": "Top brokers",
+    "by_country": "Theo quốc gia",
+    "learn": "Học",
+    "glossary": "Thuật ngữ",
+    "company": "Công ty",
+    "about": "Về chúng tôi",
+    "methodology": "Phương pháp",
+    "contact": "Liên hệ",
+    "language": "Ngôn ngữ",
+    "risk": "Công bố rủi ro",
+    "privacy": "Bảo mật",
+    "terms": "Điều khoản"
+  },
+  "countries": {
+    "TH": "Thái Lan",
+    "VN": "Việt Nam",
+    "ID": "Indonesia",
+    "MY": "Malaysia",
+    "SG": "Singapore",
+    "PH": "Philippines",
+    "KH": "Campuchia",
+    "MM": "Myanmar"
+  }
+}
