@@ -8,6 +8,13 @@
         <p class="muted">进入账户，管理评论和后台运营任务。</p>
       </div>
 
+      <a class="google-button" :href="googleLoginUrl">
+        <span class="google-button__icon" aria-hidden="true">G</span>
+        <span>使用 Google 登录</span>
+      </a>
+
+      <div class="auth-divider"><span>或使用邮箱登录</span></div>
+
       <form class="auth-form" @submit.prevent="submit">
         <div class="auth-field">
           <label for="login-email">邮箱</label>
@@ -53,6 +60,7 @@ const loading = ref(false)
 const error = ref('')
 const resendStatus = ref('')
 const user = ref<{ emailVerifiedAt?: string | null } | null>(null)
+const googleLoginUrl = computed(() => `/api/auth/google?redirect=${encodeURIComponent(localePath('/'))}`)
 
 async function submit() {
   loading.value = true
@@ -108,6 +116,56 @@ useSeoMeta({ title: '登录 - TraderVote' })
 .auth-card h1 {
   margin: 0 0 var(--sp-1);
   font-size: var(--text-3xl);
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  color: var(--color-text-1);
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.google-button:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.google-button__icon {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #4285f4;
+  font-weight: 800;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--color-text-3);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
 }
 
 .auth-form {
